@@ -2,7 +2,7 @@
     position: fixed;
     width: 128px;
     height: 128px;
-    background: url('image/鼠标指针/鼠标.png') no-repeat;
+    background: url('{{site.baseurl}}/image/鼠标指针/鼠标.png') no-repeat;
     pointer-events: none;
     z-index: 9999;
     transition: transform 0.1s ease;
