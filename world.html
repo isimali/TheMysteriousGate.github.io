@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界观速查</title>
-    <link rel="stylesheet" type="text/css" href="door.css">
-    <link rel="stylesheet" type="text/css" href="water.css">
-    <link rel="stylesheet" type="text/css" href="鼠标.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/door.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/water.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/鼠标.css">
 </head>
 <script>
     var his=true;
@@ -21,11 +21,11 @@
         if(his){
             history_text.innerHTML="选择在这一片区域建立公寓群，一个重要原因就是副本大厅，它是玩家们已知【门】的刷新最稳定的地点，【新玩家】们也都出现在这里。它位于公寓群的正中心，外表为罗马风格的圆柱状钟楼，由乳白色大理石砌成。下层为实墙，用壁柱做装饰，中间五层用连续卷。高约57米，圆形地基面积约为280平方米，共八层。内部为螺旋楼梯，以石灰岩打造，由于施工困难，只有简易的壁灯照明，【门】镶嵌在两侧的墙体中。";
             history_text.style="font-family: '天行体';"
-            history_img.src="image/背景/回忆.png";
+            history_img.src="{{site.baseurl}}/image/背景/回忆.png";
         }else{
             history_text.innerHTML="关于它的历史。这片区域是绝大部分【门】的刷新地点，起初，只是一些宗教信徒想在这片土地上盖一座钟楼，一边祈祷早日回到家乡，一边缅怀在次世界中死去的同伴，同时用纯净的钟声威慑邪恶的【门】。但神奇的是，这不仅没有导致【门】的数量减少，还令原先四散分布的【门】统一出现在了钟楼里，就像正常的【门安装在楼梯左右。";
             history_text.style="font-family: '手写体';"
-            history_img.src="image/背景/打开.png";
+            history_img.src="{{site.baseurl}}/image/背景/打开.png";
         }
     }
     function startBlurEffect(target, options = {}) {
@@ -93,7 +93,7 @@
   <div class="custom-cursor"></div>
     <div class="text_main">
         <div id="_body">
-          <a href="main.html">返回</a>
+          <a href="{{site.baseurl}}/main.html">返回</a>
             <h1 id="main_title">世界观</h1>
             <hr>
             <hr>
@@ -108,7 +108,7 @@
                 <h2>次世界</h2>
                 <hr>
                 <p>次世界与主世界共生共依，就像果实包裹着果核，而果核不知道果实的存在。第一个坠落次世界的人在多久以前已不可考，但经推测，这里的文明大约也和主世界一样有上万年的历史，宛如一条绸带，不知过往与开端，亦不见前途，人口极不稳定是信息流传不可逾越的鸿沟，这里的传说比史料更多，也难以分辨。 当然，经过数代人的努力，次世界的建设也颇具规模，衣食住行的品质与主世界无异。前人们致力于让玩家在这里感受到原来的日常，在朝不保夕的日子里，尽可能留下好的回忆。 </p>
-                <p onclick="window.location.href='error.html'" style="color: red;" id="errors">□e□r□□or</p>
+                <p onclick="window.location.href='{{site.baseurl}}/error.html'" style="color: red;" id="errors">□e□r□□or</p>
                 <br>
             </div>
             <div>
@@ -126,7 +126,7 @@
                     <h3 style="text-align: center;">副本大厅/钟楼</h3>
                     <hr>
                     <p id="history">选择在这一片区域建立公寓群，一个重要原因就是副本大厅，它是玩家们已知【门】的刷新最稳定的地点，【新玩家】们也都出现在这里。它位于公寓群的正中心，外表为罗马风格的圆柱状钟楼，由乳白色大理石砌成。下层为实墙，用壁柱做装饰，中间五层用连续卷。高约57米，圆形地基面积约为280平方米，共八层。内部为螺旋楼梯，以石灰岩打造，由于施工困难，只有简易的壁灯照明，【门】镶嵌在两侧的墙体中。当神圣的钟声再次激荡，新生的玩家将在钟楼的七层孕育而出。仁慈的“钟”会给予他们考验，并允诺降下足够求生的手段。</p>
-                    <img src="image/背景/回忆.png" width="200px" height="132px" onclick="startBlurEffect('#_body');" id="history_book">
+                    <img src="{{site.baseurl}}/image/背景/回忆.png" width="200px" height="132px" onclick="startBlurEffect('#_body');" id="history_book">
                     <br>
                 </div>
                 <div>
