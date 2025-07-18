@@ -4,7 +4,7 @@
 body{
 
     
-    background-image:url('image/背景/背景.png');
+    background-image:url('{{site.baseurl}}/image/背景/背景.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "天行体";
@@ -12,12 +12,12 @@ body{
 }
 @font-face {
     font-family: "天行体";
-    src: url("fonts/字魂白鸽天行体\(商用需授权\).ttf");
+    src: url("{{site.baseurl}}/fonts/字魂白鸽天行体\(商用需授权\).ttf");
 }
 
 @font-face {
   font-family: "手写体";
-  src: url("fonts/GuoFengMaChaoGangBiShouXieTi-2.ttf");
+  src: url("{{site.baseurl}}/fonts/GuoFengMaChaoGangBiShouXieTi-2.ttf");
 }
 
 
