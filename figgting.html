@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="door.css">
+    <link rel="stylesheet" type="text/css" href="water.css">
+    <link rel="stylesheet" type="text/css" href="鼠标.css">
+</head>
+<script>
+    window.onload=function(){
+        println(document.getElementById("con"));
+    }
+    
+    var title={
+        "人设":"名称:(外文名附中译)\n性别:\n身高:\n种族:(可自创)\n年龄:(10+)\n性格:\n性取向:(bg、bl、gb、gl、无)\n职位:(公会中的职务，散人可以填无)\n背景：(100+)\n住所:\n外貌:(30+)(可放图)\n武器:(数量限制2，大小不得超过长宽高两米，可以是热武器，但是其威力只能击穿3级及以下防弹衣)\n异能/种族特性(可以没有但建议有，仅1):(有范围或大小，CD，威力和弱点，CD要写清几段戏，异能作用持续几段戏，被动异能写清发动条件，初始强度爆砖)\n备注:\n——\n写设注意项：\n1.2P过审，u评五条建议重写，名字英文请自带翻译，住所看公告，异能不要太逆天\n2.玩家只可兽拟，兽拟化人保留兽耳、兽尾。爬行类动物则保留鳞片。NPC可兽拟，植拟，物拟，液拟，气拟。\n3.支持同人设 但并不支持直接照搬，不接受经历过剧情的同人设\n4.没有明写什么附带能力、道具之类的，就是没有 .\n名称:(外文名附中译)\n性别:\n身高:\n种族:(可自创)\n年龄:(10+)\n性格:\n性取向:(bg、bl、gb、gl、无)\n职位:(公会中的职务，散人可以填无)\n背景：(100+)\n住所:\n外貌:(30+)(可放图)\n武器:(数量限制2，大小不得超过长宽高两米，可以是热武器，但是其威力只能击穿3级及以下防弹衣)\n异能/种族特性(可以没有但建议有，仅1):(有范围或大小，CD，威力和弱点，CD要写清几段戏，异能作用持续几段戏，被动异能写清发动条件，初始强度爆砖)\n备注:\n——\n写设注意项：\n1.2P过审，u评五条建议重写，名字英文请自带翻译，住所看公告，异能不要太逆天\n2.玩家只可兽拟，兽拟化人保留兽耳、兽尾。爬行类动物则保留鳞片。NPC可兽拟，植拟，物拟，液拟，气拟。\n3.支持同人设 但并不支持直接照搬，不接受经历过剧情的同人设\n4.没有明写什么附带能力、道具之类的，就是没有 .",
+        "NPC设":'姓名:（外文名附中译）\n性别:\n编号:（最多四位数）\n身高:\n种族:（可自创）\n年龄:（12+）\n职位:（NPC特殊职位，若无则填无）\n背景:（150+）（须说明成为NPC的缘由）（允许玩家在合理范围内原创内容）\n性取向:\n性格:\n外貌:（30+）（可图）\n异能/种族特性:（17以下无，有范围大小，CD，威力和弱点，CD要写清几段戏，然后异能作用持续几段戏，被动异能写清发动条件，仅1，强度请适度）\n武器:\n备注:\n——\n写设注意项：\n1. 2P过审，u评五条建议重写，名字英文请自带翻译，住所看公告，异能不要太逆天\n2. 玩家只可兽拟，兽拟化人保留兽耳、兽尾。爬行类动物则保留鳞片。NPC可兽拟，植拟，物拟，液拟，气拟。',
+        "副本注册格式":'副本格式\n请按格式写完后小窗询问管理意愿后提交审核\n推荐给江小饺或门审核\n主线请交给江小饺或门审核\n——\n作者：\n审核员（支线及主线审核员填写）：\n副本名称:\n副本人数:\n副本类型（灵异悬疑等）:\n副本危险程度(推荐技能数+相对难度[简单、一般、困难、极限]):\n副本形式（PVP，PVE）:\n副本主线任务:\n副本支线任务（可不完成）:\n副本背景:\n副本失败惩罚（支线及主线填写）:\n副本通关奖励（道具的话写名称，作用单独交给审核，事后审核会单独把道具作用告诉获得者）（支线及主线填写）:\n副本性质（永久限时一次性？）:\n副本类型:(支线、主线、活动)\n（支线及主线须填写后审核。活动审核宽松，但不可填写通关奖励与失败惩罚）（主线副本为投稿，审核通过后将进行评选，如果您的副本在所有投稿中脱颖而出，那么它将会成为主线的一部分）\n剧本:(大致描述剧情走向、关卡设计等)（活动本禁填）（请注意，在创作者未明确标注的情况下，上公告时请将此项填为“保密”）\n——\n欢迎各位踊跃投稿！\n主线副本评选成功后，审核组会以2000积分买断该副本，包括开本权、继续制作权、最终解释权。\n活动须由作者亲自开',
+        "注意事项":'【ban位】\n1.时间、空间、因果\n(1)以上都是ban位常客了，出现一律u\n(2)本群世界观下，其为钟楼的权柄\n2.打断技能\n这会对副本以及其他玩家的体验有极大影响\n打断他人是不好的行为，现实里一样，网络上也一样，不是吗？\n3.硬核描述\n群内不都是高材生，希望各位请勿使用硬核物化生描述\n4.免疫\nBoss的最终技能被你一个免疫就顶掉了，那Boss岂不很没面子？不是吗？\n5.命运\n在本群世界观下基本不可能实现，属于“钟楼”的权柄之一\n6.概念\n概念神有多强你应该是知道的。\n【严审】\n禁疗\n这种异能会大幅度影响奶妈的强度，出现严审\n诅咒、必中\n此类技能效果过于绝对，会破坏其他玩家游戏体验\n---\n【数值】强化伤害幅度建议在20%以内\n护盾免疫伤害建议在30%～50%\n范围伤害技能范围建议在半径50m以内\n范围移动技能范围建议在半径100m以内\n范围控制技能范围建议在半径25m以内\n范围感知技能范围建议在半径50m以内\n范围治疗、强化技能范围建议在半径20m以内\n直线攻击技能最远飞行距离建议20m以内，宽度建议5m以内\n飞行类技能飞行高度建议在10m以下\n飞行物速度建议在10m/段以内\n眩晕、击飞、沉默持续时间建议在1~2段戏\n减速、减抗、减攻速持续时间建议在1~3段戏\n魅惑、幻境类技能持续时间建议在1~2段戏\n隐身、降低存在感等隐藏类技能持续时间建议在2~4段戏\n造物、召唤物等召唤/创造类技能产物在场个数建议在4个以内\n奶量建议3段戏轻伤——痊愈，5段戏重伤——轻伤\n概率生效的诅咒、因果律生效概率在四分之一及以下\n必定生效的诅咒、因果律debuff写大一些，用完躺上十天半个月的那种\n时间倒流、时间加速、时空转换不建议实装到设子里，容易被u\n如果技能debuff很大，可以不受范围和持续时间限制，但是一定要很大（至少用完躺个一天两天吧！别太荒谬，用完躺半天以内的只能增加一点范围！）'
+    };
+    function println(elements){
+        const peoples=document.getElementById("peoples");
+        const content=document.getElementById("content");
+        const va=elements.value;
+        var text=elements.options[elements.selectedIndex].text;
+
+        peoples.innerHTML=text;
+        content.innerHTML=title[text];
+            }
+    function startBlurEffect(target, options = {},lp) {
+      // 处理目标元素（支持多种传入方式）
+      const elements = getElements(target);
+      if (!elements.length) return;
+
+      // 默认配置
+      const {
+        duration = 2000,
+        strength = 2,
+        opacity = 0.8
+      } = options;
+
+      // 为每个元素添加模糊效果
+      elements.forEach(el => {
+        // 添加基础类
+        el.classList.add('blur-effect');
+        // 设置 CSS 变量（动态控制效果）
+        el.style.setProperty('--blur-strength', `${strength}px`);
+        el.style.setProperty('--opacity', opacity);
+        // 激活动画
+        el.classList.add('active');
+
+        // 自动移除模糊（持续时间后恢复）
+        setTimeout(() => {
+          stopBlurEffect(el);
+        }, duration);
+      });
+
+      
+    }
+    
+    function stopBlurEffect(target) {
+      const elements = getElements(target);
+      elements.forEach(el => {
+        el.classList.remove('active');
+        // 可选：完全移除类（如需彻底清除样式）
+        // setTimeout(() => el.classList.remove('blur-effect'), 300);
+      });
+    }
+
+    /**
+     * 工具函数：统一处理目标元素获取
+     * @param {string|HTMLElement|NodeList} target - 目标元素
+     * @returns {NodeList|HTMLElement[]} 元素列表
+     */
+    function getElements(target) {
+      if (typeof target === 'string') {
+        // 选择器字符串（如 '#box1', '.group'）
+        return document.querySelectorAll(target);
+      } else if (target instanceof HTMLElement) {
+        // 单个元素
+        return [target];
+      } else if (target instanceof NodeList) {
+        // 元素列表
+        return target;
+      }
+      return []; // 无效目标
+    }
+</script>
+<body style="align-items: center;justify-content: center;">
+  <div class="custom-cursor"></div>
+    <div id="_body">
+    <div class="text_main">
+      <a href="main.html">返回</a>
+      
+        <h1 class="main_title" id="peoples">人设</h1>
+        <hr>
+        <p style="white-space: pre;" id="content"></p>
+    
+        <label>
+            <select id="con" style="height: 50px;width: 100px;font-size: 20px;" onchange="startBlurEffect('#_body');println(this);">
+                <option value="peoples">人设</option>
+                <option value="npc">NPC设</option>
+                <option value="test">副本设</option>
+                <option value="team">公会设</option>
+                <option value="tip">注意事项</option>
+            </select>
+        </label>
+        
+        </div>
+    </div>
+    <script src="鼠标.js"></script>
+</body>
+</html>

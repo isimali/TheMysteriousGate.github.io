@@ -1,0 +1,14 @@
+.custom-cursor {
+    position: fixed;
+    width: 128px;
+    height: 128px;
+    background: url('image/鼠标指针/鼠标.png') no-repeat;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease;
+  }
+  
+  /* 点击效果 */
+  .custom-cursor.clicked {
+    transform: scale(0.8);
+  }
